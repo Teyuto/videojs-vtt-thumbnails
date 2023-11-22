@@ -4,6 +4,10 @@
     function vttThumbnails(options) {
         var player = this;
 
+        if (videojs.browser.IS_IOS || videojs.browser.IS_ANDROID) {
+            return;
+        }
+
         var thumbnailContainer = document.createElement('div');
         thumbnailContainer.className = 'thumbnail-preview';
 
@@ -88,18 +92,6 @@
         }
 
         createThumbnails(options.spriteUrl, options.vttData);
-
-        player.on('userinactive', function () {
-            document.querySelectorAll('.thumbnail').forEach(thumbnail => {
-                thumbnail.style.display = 'none';
-            });
-        });
-
-        player.on('useractive', function () {
-            document.querySelectorAll('.thumbnail').forEach(thumbnail => {
-                thumbnail.style.display = 'block';
-            });
-        });
 
         player.controlBar.progressControl.on('mousemove', function (e) {
             const progressBar = player.controlBar.progressControl.el();
