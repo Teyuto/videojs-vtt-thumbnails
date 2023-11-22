@@ -1,8 +1,7 @@
 .thumbnail-preview {
-  position: absolute;
-  bottom: 120;
-  margin-left:-55;
-  left: 0;
+  bottom: -80%;
+  margin-left: -50px;
+  position: relative;
   pointer-events: none;
   display: none;
   z-index: 0;
