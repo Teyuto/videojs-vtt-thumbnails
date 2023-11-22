@@ -6,7 +6,8 @@
 
         var thumbnailContainer = document.createElement('div');
         thumbnailContainer.className = 'thumbnail-preview';
-        document.body.appendChild(thumbnailContainer);
+        // document.body.appendChild(thumbnailContainer);
+        player.el().appendChild(thumbnailContainer);
 
         function createThumbnails(spriteUrl, vttData) {
             if (vttData === undefined) {
