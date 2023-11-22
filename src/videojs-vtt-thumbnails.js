@@ -89,6 +89,18 @@
 
         createThumbnails(options.spriteUrl, options.vttData);
 
+        player.on('userinactive', function () {
+            document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+                thumbnail.style.display = 'none';
+            });
+        });
+
+        player.on('useractive', function () {
+            document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+                thumbnail.style.display = 'block';
+            });
+        });
+
         player.controlBar.progressControl.on('mousemove', function (e) {
             const progressBar = player.controlBar.progressControl.el();
             const barRect = progressBar.getBoundingClientRect();
