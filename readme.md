@@ -61,6 +61,9 @@ Make sure to replace `'video'`, `'path/to/sprite.jpg'`, and `'path/to/thumbnails
 - `spriteUrl`: URL/path to the sprite image.
 - `vttData`: URL/path to the VTT file containing thumbnail data or VTT string data.
 
+## Example
+Check the `example/index.html` file for a working example.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
