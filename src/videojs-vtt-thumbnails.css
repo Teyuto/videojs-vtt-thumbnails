@@ -1,0 +1,22 @@
+.thumbnail-preview {
+  position: absolute;
+  bottom: 190;
+  left: 0;
+  pointer-events: none;
+  display: none;
+  z-index: 0;
+  margin-left: -50;
+}
+
+.thumbnail {
+  position: absolute;
+  height: 100%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  pointer-events: none; 
+  display: none;
+}
+
+.video-js .thumbnail-preview .thumbnail {
+  border: 2px solid #fff;
+}
