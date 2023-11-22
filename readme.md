@@ -14,17 +14,12 @@ Make sure you have [Video.js](https://videojs.com/) installed in your project be
 
 ### Installation
 
-Include the Video.js library and the `videojs-vtt-thumbnails.js` file in your HTML file:
+Include the Video.js library and the `videojs-vtt-thumbnails` files in your HTML file:
 
 ```html
-<!-- Video.js CSS -->
-<link rel="stylesheet" href="https://unpkg.com/video.js/dist/video-js.css">
-
-<!-- Video.js library -->
-<script src="https://unpkg.com/video.js/dist/video.js"></script>
-
 <!-- VTT Thumbnails plugin -->
-<script src="path/to/vtt-thumbnails.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Teyuto/videojs-vtt-thumbnails/src/videojs-vtt-thumbnails.css">
+<script src="https://cdn.jsdelivr.net/gh/Teyuto/videojs-vtt-thumbnails/src/videojs-vtt-thumbnails.js"></script>
 ```
 
 ### Usage
@@ -35,10 +30,27 @@ Initialize Video.js as you normally would and add the VTT Thumbnails plugin:
 // Create a video player
 var player = videojs('video');
 
-// Add VTT Thumbnails plugin
+// Add VTT Thumbnails plugin by vttData Url
 player.vttThumbnails({
     spriteUrl: 'path/to/sprite.jpg',
     vttData: 'path/to/thumbnails.vtt'
+});
+
+// Add VTT Thumbnails plugin by vttData String
+player.vttThumbnails({
+    spriteUrl: 'path/to/sprite.jpg',
+    vttData:`1
+            00:00:00,000 --> 00:00:05,000
+            sprite.jpg#xywh=0,0,100,67
+            
+            2
+            00:00:05,000 --> 00:00:10,000
+            sprite.jpg#xywh=100,0,100,67
+            
+            3
+            00:00:10,000 --> 00:00:15,000
+            sprite.jpg#xywh=200,0,100,67
+            `;
 });
 ```
 
