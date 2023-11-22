@@ -59,7 +59,7 @@ Make sure to replace `'video'`, `'path/to/sprite.jpg'`, and `'path/to/thumbnails
 ## Options
 
 - `spriteUrl`: URL/path to the sprite image.
-- `vttData`: URL/path to the VTT file containing thumbnail data.
+- `vttData`: URL/path to the VTT file containing thumbnail data or VTT string data.
 
 ## License
 
