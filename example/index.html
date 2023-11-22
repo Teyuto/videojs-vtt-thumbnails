@@ -1,0 +1,194 @@
+<head>
+    <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet"/>
+    <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Teyuto/videojs-vtt-thumbnails/src/videojs-vtt-thumbnails.css">
+
+        <script
+            src="https://cdn.jsdelivr.net/gh/Teyuto/videojs-vtt-thumbnails/src/videojs-vtt-thumbnails.js"></script>
+
+    </head>
+
+    <body>
+        <video
+            id="my-video"
+            class="video-js"
+            controls="controls"
+            preload="auto"
+            width="640"
+            height="700"
+            poster="MY_VIDEO_POSTER.jpg"
+            data-setup="{}">
+            <source
+                src="https://demo-public.gvideo.io/videos/2675_FnlHXwA16ZMxmUr/master.m3u8"
+                type="application/x-mpegURL"/>
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web
+                browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a >
+            </p>
+        </video>
+        <script>
+            var options = {};
+
+            var player = videojs('my-video', options, function onPlayerReady() {
+                videojs.log('Your player is ready!');
+            });
+
+            player.vttThumbnails({
+                spriteUrl: 'https://demo-public.gvideo.io/static/videoplatform/sprites/2675/2474723_FnlHXw' +
+                        'A16ZMxmUr.mp4_sprite.jpg',
+                vttData: `1
+                        00:00:00,000 --> 00:00:05,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=0,0,100,42
+                        
+                        2
+                        00:00:05,000 --> 00:00:10,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=100,0,100,42
+                        
+                        3
+                        00:00:10,000 --> 00:00:15,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=200,0,100,42
+                        
+                        4
+                        00:00:15,000 --> 00:00:20,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=300,0,100,42
+                        
+                        5
+                        00:00:20,000 --> 00:00:25,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=400,0,100,42
+                        
+                        6
+                        00:00:25,000 --> 00:00:30,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=500,0,100,42
+                        
+                        7
+                        00:00:30,000 --> 00:00:35,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=600,0,100,42
+                        
+                        8
+                        00:00:35,000 --> 00:00:40,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=0,42,100,42
+                        
+                        9
+                        00:00:40,000 --> 00:00:45,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=100,42,100,42
+                        
+                        10
+                        00:00:45,000 --> 00:00:50,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=200,42,100,42
+                        
+                        11
+                        00:00:50,000 --> 00:00:55,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=300,42,100,42
+                        
+                        12
+                        00:00:55,000 --> 00:01:00,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=400,42,100,42
+                        
+                        13
+                        00:01:00,000 --> 00:01:05,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=500,42,100,42
+                        
+                        14
+                        00:01:05,000 --> 00:01:10,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=600,42,100,42
+                        
+                        15
+                        00:01:10,000 --> 00:01:15,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=0,84,100,42
+                        
+                        16
+                        00:01:15,000 --> 00:01:20,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=100,84,100,42
+                        
+                        17
+                        00:01:20,000 --> 00:01:25,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=200,84,100,42
+                        
+                        18
+                        00:01:25,000 --> 00:01:30,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=300,84,100,42
+                        
+                        19
+                        00:01:30,000 --> 00:01:35,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=400,84,100,42
+                        
+                        20
+                        00:01:35,000 --> 00:01:40,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=500,84,100,42
+                        
+                        21
+                        00:01:40,000 --> 00:01:45,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=600,84,100,42
+                        
+                        22
+                        00:01:45,000 --> 00:01:50,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=0,126,100,42
+                        
+                        23
+                        00:01:50,000 --> 00:01:55,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=100,126,100,42
+                        
+                        24
+                        00:01:55,000 --> 00:02:00,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=200,126,100,42
+                        
+                        25
+                        00:02:00,000 --> 00:02:05,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=300,126,100,42
+                        
+                        26
+                        00:02:05,000 --> 00:02:10,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=400,126,100,42
+                        
+                        27
+                        00:02:10,000 --> 00:02:15,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=500,126,100,42
+                        
+                        28
+                        00:02:15,000 --> 00:02:20,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=600,126,100,42
+                        
+                        29
+                        00:02:20,000 --> 00:02:25,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=0,168,100,42
+                        
+                        30
+                        00:02:25,000 --> 00:02:30,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=100,168,100,42
+                        
+                        31
+                        00:02:30,000 --> 00:02:35,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=200,168,100,42
+                        
+                        32
+                        00:02:35,000 --> 00:02:40,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=300,168,100,42
+                        
+                        33
+                        00:02:40,000 --> 00:02:45,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=400,168,100,42
+                        
+                        34
+                        00:02:45,000 --> 00:02:50,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=500,168,100,42
+                        
+                        35
+                        00:02:50,000 --> 00:02:55,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=600,168,100,42
+                        
+                        36
+                        00:02:55,000 --> 00:03:00,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=0,210,100,42
+                        
+                        37
+                        00:03:00,000 --> 00:03:05,000
+                        FnlHXwA16ZMxmUr_sprite.jpg#xywh=100,210,100,42
+                        `
+            });
+        </script>
+    </script>
+
+</body>
