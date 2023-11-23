@@ -18,8 +18,8 @@ Include the Video.js library and the `videojs-vtt-thumbnails` files in your HTML
 
 ```html
 <!-- VTT Thumbnails plugin -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Teyuto/videojs-vtt-thumbnails@main/src/videojs-vtt-thumbnails.css">
-<script src="https://cdn.jsdelivr.net/gh/Teyuto/videojs-vtt-thumbnails@main/src/videojs-vtt-thumbnails.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Teyuto/videojs-vtt-thumbnails@main/src/videojs-vtt-thumbnails.min.css">
+<script src="https://cdn.jsdelivr.net/gh/Teyuto/videojs-vtt-thumbnails@main/src/videojs-vtt-thumbnails.min.js"></script>
 ```
 
 ### Usage
