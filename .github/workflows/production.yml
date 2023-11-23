@@ -1,4 +1,4 @@
-name: Release React Native Player package
+name: Release videojs-vtt-thumbnails package
 on:
   push:
     branches: ["main"]
