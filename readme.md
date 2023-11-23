@@ -62,7 +62,7 @@ Make sure to replace `'video'`, `'path/to/sprite.jpg'`, and `'path/to/thumbnails
 - `vttData`: URL/path to the VTT file containing thumbnail data or VTT string data.
 
 ## Example
-Check the `example/index.html` file for a working example.
+Check the `examples/index.html` file for a working example.
 
 ## License
 
