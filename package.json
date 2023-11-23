@@ -1,0 +1,24 @@
+{
+    "name": "@teyuto/videojs-vtt-thumbnails",
+    "author": "Teyuto",
+    "license": "MIT",
+    "version": "1.0.0",
+    "description": "VTT Thumbnails Plugin for Video.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Teyuto/videojs-vtt-thumbnails.git"
+    },
+    "files": [
+        "src"
+    ],
+    "keywords": [
+      "videojs",
+      "videojs-plugin",
+      "teyuto",
+      "video"
+    ],
+    "bugs": {
+      "url": "https://github.com/Teyuto/videojs-vtt-thumbnails/issues"
+    },
+    "homepage": "https://github.com/Teyuto/videojs-vtt-thumbnails#readme"
+  }
