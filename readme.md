@@ -2,6 +2,8 @@
 
 The VTT Thumbnails plugin is a Video.js plugin that allows you to display thumbnails from a sprite image on the progress bar of your video player.
 
+![Screenshot](screenshot.gif)
+
 ## Compatibility
 
 This plugin version is compatible with Video.js v8.x.
