@@ -35,7 +35,9 @@ var player = videojs('video');
 // Add VTT Thumbnails plugin by vttData Url
 player.vttThumbnails({
     spriteUrl: 'path/to/sprite.jpg',
-    vttData: 'path/to/thumbnails.vtt'
+    vttData: {
+        url: 'path/to/thumbnails.vtt'
+    }
 });
 
 // Add VTT Thumbnails plugin by vttData String
