@@ -39,7 +39,7 @@
             while (index < lines.length) {
                 const line = lines[index].trim();
                 if (line !== '') {
-                    const matchTime = line.match(/(\d+:\d+:\d+,\d+) --> (\d+:\d+:\d+,\d+)/);
+                    const matchTime = line.match(/(\d+:\d+:\d+[\.,]\d+) --> (\d+:\d+:\d+[\.,]\d+)/);
                     if (matchTime) {
                         const [, startTime, endTime] = matchTime;
                         const xywhLine = lines[index + 1];
@@ -72,7 +72,7 @@
         }
 
         function parseVttTime(timeString) {
-            const match = timeString.match(/(\d+:\d+:\d+,\d+)/);
+            const match = timeString.match(/(\d+:\d+:\d+[\.,]\d+)/);
 
             if (match) {
                 const [fullMatch] = match;
@@ -137,3 +137,4 @@
 
     registerPlugin('vttThumbnails', vttThumbnails);
 })(window.videojs);
+
