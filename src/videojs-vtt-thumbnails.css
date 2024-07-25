@@ -1,6 +1,6 @@
 .thumbnail-preview {
   position: absolute;
-  bottom: 70px;
+  bottom: 50px;
   pointer-events: none;
   display: none;
   z-index: 0;
