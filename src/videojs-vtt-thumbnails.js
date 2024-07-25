@@ -59,7 +59,7 @@
             thumbnail.className = 'thumbnail';
             thumbnail.dataset.startTime = startTime;
 
-            const percentage = startTime / player.duration();
+            const percentage = startTime / (player.duration() || 1);
             const progressBar = player.controlBar.progressControl.el();
             const barRect = progressBar.getBoundingClientRect();
             thumbnail.style.left = `${barRect.width * percentage}px`;
@@ -108,7 +108,9 @@
                 closestThumbnail.style.display = 'block';
             }
 
-            thumbnailContainer.style.left = e.pageX + 'px';
+            const playerRect = player.el().getBoundingClientRect();
+
+            thumbnailContainer.style.left = (e.pageX - playerRect.left) + 'px';
             thumbnailContainer.style.display = 'block';
         });
 
