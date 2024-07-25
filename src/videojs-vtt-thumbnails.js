@@ -59,11 +59,6 @@
             thumbnail.className = 'thumbnail';
             thumbnail.dataset.startTime = startTime;
 
-            const percentage = startTime / (player.duration() || 1);
-            const progressBar = player.controlBar.progressControl.el();
-            const barRect = progressBar.getBoundingClientRect();
-            thumbnail.style.left = `${barRect.width * percentage}px`;
-
             thumbnail.style.backgroundImage = `url(${spriteUrl})`;
             thumbnail.style.backgroundPosition = `-${x}px -${y}px`;
             thumbnail.style.width = `${width}px`;
