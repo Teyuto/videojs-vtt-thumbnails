@@ -59,11 +59,6 @@
             thumbnail.className = 'thumbnail';
             thumbnail.dataset.startTime = startTime;
 
-            const percentage = startTime / player.duration();
-            const progressBar = player.controlBar.progressControl.el();
-            const barRect = progressBar.getBoundingClientRect();
-            thumbnail.style.left = `${barRect.width * percentage}px`;
-
             thumbnail.style.backgroundImage = `url(${spriteUrl})`;
             thumbnail.style.backgroundPosition = `-${x}px -${y}px`;
             thumbnail.style.width = `${width}px`;
@@ -108,7 +103,9 @@
                 closestThumbnail.style.display = 'block';
             }
 
-            thumbnailContainer.style.left = e.pageX + 'px';
+            const playerRect = player.el().getBoundingClientRect();
+
+            thumbnailContainer.style.left = (e.pageX - playerRect.left) + 'px';
             thumbnailContainer.style.display = 'block';
         });
 
