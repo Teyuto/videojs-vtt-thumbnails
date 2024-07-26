@@ -72,4 +72,10 @@ Check the `examples/index.html` file for a working example.
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
+
+## How to contribute
+
+- Suggest changes into Issues
+- Open Pull Requests on dev branch with improved code/new features and explain it
+
 ---
