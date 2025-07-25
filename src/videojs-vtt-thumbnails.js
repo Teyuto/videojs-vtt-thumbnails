@@ -8,6 +8,9 @@
             return;
         }
 
+        const vttContainer = player.el().querySelector('.thumbnail-preview');
+        if (vttContainer) vttContainer.remove();
+
         var thumbnailContainer = document.createElement('div');
         thumbnailContainer.className = 'thumbnail-preview';
 
